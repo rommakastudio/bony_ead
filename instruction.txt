@@ -1,0 +1,125 @@
+PROJETO DANDO ERRO
+
+REDIRECIONAMENTO DE PÁGINA
+
+*** MELHOR MUDAR MVC
+
+______
+PHP - MÓDULO 33 - PROJETO - PLATAFORMA EAD
+AULA 01 - Criando uma Plataforma EAD (01/16)
+______
+
+Elaboração do banco de dados
+
+CURSO
+-id
+-name
+-image
+-description
+
+ALUNOS
+-id
+-name
+-email
+-senha
+
+TABELA DE RELACIONAMENTO
+ALUNO_CURSO
+-id
+-id_curso
+-id_aluno
+
+MÓDULOS
+-id
+-name
+-id_curso
+
+AULAS
+-id
+-name
+-id_modulo
+-id_curso
+-tipo
+-ordem
+
+VIDEOS
+-id
+-id_aula
+-name
+-description
+-url
+
+HISTORICO
+-id
+-data
+-id_aluno
+-id_aula
+
+QUESTIONARIOS
+-id
+-id_aula
+-pergunta
+-option1
+-option2
+-option3
+-option4
+-resposta
+
+-----
+CRIANDO BANCO DE DADOS
+
+Tabela cursos
+id int 11 unsigned chave primária e autoincrement
+name varchar 50 não permite nulo
+image varchar 37 não permite nulo
+description text permite nulo
+
+Tabela ALUNOS
+id int 11 unsigned chave primária e autoincrement
+name varchar 50 não permite nulo
+email varchar 100 não permite nulo
+senha varchar 32 não permite nulo
+
+Tabela  ALUNO_CURSO
+id int 11 unsigned chave primária e autoincrement
+id_curso int 11 não permite nulo
+id_aluno int 11 não permite nulo
+
+Tabela MODULOS
+id int 11 unsigned chave primária e autoincrement
+id_curso int 11 não permite nulo
+name varchar 50 não permite nulo
+
+Tabela AULAS
+id int 11 unsigned chave primária e autoincrement
+id_modulo int 11 não permite nulo
+id_curso int 11 não permite nulo
+ordem int 11 não permite nulo
+
+Tabela VIDEOS
+id int 11 unsigned chave primária e autoincrement
+id_aula int 11 não permite nulo
+name varchar 50 não permite nulo
+description text permite nulo
+url varchar 50 permite nulo
+
+Tabela QUESTIONARIOS
+id int 11 unsigned chave primária e autoincrement
+id_aula int 11 não permite nulo
+pergunta varchar 100 não permite nulo
+option1 varchar 100 permite nulo
+option2 varchar 100 permite nulo
+option3 varchar 100 permite nulo
+option4 varchar 100 permite nulo
+respota tinyint 1 não permite nulo
+
+Tabela HISTORICO
+id int 11 unsigned chave primária e autoincrement
+data_viewed datetime
+id_aluno int 11 não permite nulo
+id_aula int 11 não permite nulo
+
+______
+PHP - MÓDULO 33 - PROJETO - PLATAFORMA EAD
+AULA 02 - Criando uma Plataforma EAD (02/16)
+______
